@@ -1,0 +1,93 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.logo {
+    height: 80px;
+}
+
+header nav {
+    display: flex;
+    justify-content: center; /* centraliza os itens no nav */
+  }
+
+  header nav ul {
+    list-style: none;
+    display: flex;          
+    padding: 50px;            
+    align-items: center;
+  }
+
+  header nav ul a {
+    text-decoration: none;
+    color: #1c2f44;
+    font-weight: bold;
+    font-size: 1.1rem;
+    transition: color 0.3s;
+  }
+
+  header nav ul a:hover {
+    color: #0077cc;
+  }
+
+.titulos {
+    font-size: 40px;
+    margin: 20px;
+    text-align: center;
+}
+
+.ofertas {
+    margin: 20px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin: 20px;
+}
+
+.card {
+    position: relative;
+    overflow: hidden;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.capa {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.descricao {
+    padding: 10px;
+    text-align: center;
+}
+
+.card1 {
+    grid-column: span 2;
+    grid-row: span 2;
+}
+
+.card2 {
+    grid-column: span 1;
+    grid-row: span 1;
+}
+
+.card3 {
+    grid-column: span 1;
+    grid-row: span 2;
+}
+
+.card4 {
+    grid-column: span 2;
+    grid-row: span 1;
+}
