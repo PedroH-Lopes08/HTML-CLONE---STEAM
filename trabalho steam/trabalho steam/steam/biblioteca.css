@@ -2,125 +2,125 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-  }
+}
 
-  body {
+body {
     font-family: Arial, sans-serif;
-    background-color: #f2f2f2;
+    background-color: #171a21; /* fundo escuro Steam */
     padding: 20px;
-  }
+    color: #c6d4df; /* cor clara para texto */
+}
 
-  header, main, footer {
+header, main, footer {
     max-width: 800px;
     margin: 0 auto;
-  }
+}
 
- 
-  header {
+header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: #ffffff;
+    background-color: #2a475e; /* azul escuro Steam */
     padding: 15px 20px;
     border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.5);
     margin-bottom: 30px;
-  }
+}
 
-  .logo {
+.logo {
     display: flex;
     align-items: center;
     gap: 10px;
-  }
+}
 
-  .menu {
+.menu {
     display: flex;
     gap: 20px;
-  }
+}
 
-  .menu a {
+.menu a {
     text-decoration: none;
-    color: #1c2f44;
+    color: #66c0f4; /* azul claro Steam */
     font-weight: bold;
     font-size: 1rem;
-  }
+    transition: color 0.3s;
+}
 
-  .menu a:hover {
-    color: #0077cc;
-  }
+.menu a:hover {
+    color: #a1d6ff;
+}
 
-
-  main {
-    background-color: #ffffff;
+main {
+    background-color: #1b2838; /* azul médio Steam */
     padding: 20px;
     border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-  }
+    box-shadow: 0 2px 5px rgba(0,0,0,0.5);
+}
 
-  h1 {
+h1 {
     font-size: 1.8rem;
     margin-bottom: 25px;
-    color: #1c2f44;
-  }
+    color: #66c0f4;
+}
 
-  .jogo {
+.jogo {
     display: flex;
     margin-bottom: 20px;
     padding-bottom: 20px;
-    border-bottom: 1px solid #ddd;
-  }
+    border-bottom: 1px solid #33475b;
+}
 
-  .jogo img {
+.jogo img {
     width: 180px;
     height: auto;
     margin-right: 20px;
     border-radius: 5px;
-  }
+}
 
-  .info {
+.info {
     flex: 1;
-  }
+}
 
-  .info h2 {
+.info h2 {
     font-size: 1.2rem;
     margin-bottom: 10px;
-    color: #333;
-  }
+    color: #c6d4df;
+}
 
-  .info p {
+.info p {
     margin-bottom: 5px;
-    color: #666;
-  }
+    color: #a9b7c6;
+}
 
-  .info a {
+.info a {
     display: inline-block;
     margin-top: 10px;
-    color: #28a745;
+    color: #66c0f4;
     text-decoration: none;
     font-weight: bold;
-  }
+    transition: color 0.3s;
+}
 
-  .info a:hover {
-    color: #1e7e34;
-  }
+.info a:hover {
+    color: #a1d6ff;
+}
 
-
-  footer {
+footer {
     text-align: center;
     margin-top: 40px;
-  }
+}
 
-  footer a {
+footer a {
     text-decoration: none;
-    color: #ff8c00;
+    color: #66c0f4;
     font-weight: bold;
-    border: 2px solid #ff8c00;
+    border: 2px solid #66c0f4;
     padding: 10px 20px;
     border-radius: 5px;
-    background-color: #fff3e0;
+    background-color: #0b1624;
     transition: background-color 0.3s;
-  }
+}
 
-  footer a:hover {
-    background-color: #ffe0b2;
-  }
+footer a:hover {
+    background-color: #1b2838;
+}
