@@ -1,93 +1,246 @@
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: Arial, sans-serif;
-}
-
-.logo {
-    height: 80px;
-}
-
-header nav {
-    display: flex;
-    justify-content: center; /* centraliza os itens no nav */
+ * {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
   }
 
-  header nav ul {
-    list-style: none;
-    display: flex;          
-    padding: 50px;            
-    align-items: center;
+  body {
+      font-family: Arial, sans-serif;
+      background-color: #171a21; 
+      color: white;
   }
 
-  header nav ul a {
-    text-decoration: none;
-    color: #1c2f44;
-    font-weight: bold;
-    font-size: 1.1rem;
-    transition: color 0.3s;
+  header {
+      background-color: #171a21;
+      padding: 10px 0;
   }
 
-  header nav ul a:hover {
-    color: #0077cc;
+  .logo {
+      height: 40px;
+      margin-left: 20px;
+      vertical-align: middle;
   }
 
-.titulos {
-    font-size: 40px;
-    margin: 20px;
-    text-align: center;
-}
+  header nav {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 40px;
+      margin-top: 10px;
+  }
+
+  header nav a {
+      text-decoration: none;
+      color: #c6d4df;
+      font-weight: bold;
+      font-size: 1.1rem;
+      transition: color 0.3s;
+  }
+
+  header nav a:hover {
+      color: #66c0f4;
+  }
+
+  main {
+      max-width: 1200px;
+      margin: 20px auto;
+      padding: 0 20px;
+  }
+
+  h2 {
+      font-size: 2rem;
+      margin-bottom: 15px;
+      color: #66c0f4;
+  }
+
+  .lancamento {
+      display: flex;
+      gap: 20px;
+      margin-bottom: 40px;
+      background-color: #2a475e;
+      padding: 15px;
+      border-radius: 10px;
+  }
+
+  .lancamento img {
+      max-width: 400px;
+      border-radius: 10px;
+  }
+
+  .lancamento-info {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      color: white;
+  }
+
+  .lancamento-info h3 {
+      margin-bottom: 10px;
+      font-size: 1.8rem;
+  }
+
+  .lancamento-info p {
+      font-size: 1.3rem;
+      color: #6abf69; 
+      margin-bottom: 15px;
+  }
+
+  .lancamento-info a {
+      width: fit-content;
+      text-decoration: none;
+      color: #ffb03b;
+      font-weight: bold;
+      border: 1px solid #ffb03b;
+      padding: 8px 16px;
+      border-radius: 5px;
+      transition: background-color 0.3s, color 0.3s;
+  }
+
+  .lancamento-info a:hover {
+      background-color: #ffb03b;
+      color: #171a21;
+  }
 
 .ofertas {
-    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
 }
 
 .grid-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
-    margin: 20px;
 }
 
-.card {
-    position: relative;
-    overflow: hidden;
-    border: 1px solid #ccc;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+.ofertas {
+  margin: 20px;
 }
 
-.capa {
-    width: 100%;
-    height: auto;
-    display: block;
+.titulos2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px; 
 }
 
-.descricao {
-    padding: 10px;
-    text-align: center;
-}
+
+
 
 .card1 {
-    grid-column: span 2;
-    grid-row: span 2;
+    grid-column: span 3;
+    grid-row: auto;
 }
 
-.card2 {
-    grid-column: span 1;
-    grid-row: span 1;
+  .card {
+      background-color: #2a475e;
+      border-radius: 10px;
+      overflow: hidden;
+      color: white;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+      display: flex;
+      flex-direction: column;
+   
 }
 
-.card3 {
-    grid-column: span 1;
-    grid-row: span 2;
-}
+  
 
-.card4 {
-    grid-column: span 2;
-    grid-row: span 1;
-}
+  .card img {
+      width: 100%;
+      height: auto;
+      display: block;
+      border-bottom: 1px solid rgba(255,255,255,0.1);
+  }
+
+  .descricao {
+      padding: 10px;
+      text-align: left;
+      flex-grow: 1;
+  }
+
+  .descricao h3 {
+      margin-bottom: 5px;
+  }
+
+  .descricao p {
+      color: #6abf69;
+      font-weight: bold;
+  }
+
+
+
+
+  .card2 {
+      grid-column: span 1;
+      grid-row: span 1;
+  }
+
+  .card3 {
+      grid-column: span 1;
+      grid-row: span 2;
+  }
+
+  .card4 {
+      grid-column: span 2;
+      grid-row: span 1;
+  }
+
+  footer {
+      background-color: #171a21;
+      padding: 20px 0;
+      text-align: center;
+  }
+
+  footer a {
+      color: #ffb03b;
+      text-decoration: none;
+      font-weight: bold;
+      border: 1px solid #ffb03b;
+      padding: 10px 25px;
+      border-radius: 5px;
+      transition: background-color 0.3s, color 0.3s;
+  }
+
+  footer a:hover {
+      background-color: #ffb03b;
+      color: #171a21;
+  }
+
+  @media(max-width: 900px) {
+      .lancamento {
+          flex-direction: column;
+          align-items: center;
+          text-align: center;
+      }
+
+      .lancamento img {
+          max-width: 100%;
+      }
+
+      .lancamento-info {
+          align-items: center;
+      }
+
+      .grid-container {
+          grid-template-columns: 1fr 1fr;
+      }
+
+      .card1 {
+          grid-column: span 2;
+          grid-row: auto;
+      }
+
+      .card3 {
+          grid-row: auto;
+      }
+  }
+
+  @media(max-width: 600px) {
+      header nav {
+          flex-direction: column;
+          gap: 10px;
+      }
+
+      .grid-container {
+          grid-template-columns: 1fr;
+      }
+  }
